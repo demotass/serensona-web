@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serensona - Tu santuario de paz</title>
+    <meta name="description" content="Descubre sonidos envolventes para dormir, meditar y concentrarte con Serensona.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="container nav-container">
+            <div class="logo">Serensona</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><button onclick="openModal('privacy-modal')"
+                            style="background:none; border:none; color:inherit; font:inherit; cursor:pointer;"
+                            class="nav-link">Privacidad</button></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Tu santuario de paz<br>y relajación</h1>
+            <p class="subtitle">Descubre sonidos envolventes para dormir, meditar y concentrarte.</p>
+            <a href="#" class="cta-button">
+                <svg class="android-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.523 15.3414C17.523 16.7461 16.3789 17.8845 14.9742 17.8845C13.5684 17.8845 12.4243 16.7461 12.4243 15.3414C12.4243 13.9356 13.5684 12.7972 14.9742 12.7972C16.3789 12.7972 17.523 13.9356 17.523 15.3414ZM8.08053 15.3414C8.08053 16.7461 6.93645 17.8845 5.53066 17.8845C4.12487 17.8845 2.98079 16.7461 2.98079 15.3414C2.98079 13.9356 4.12487 12.7972 5.53066 12.7972C6.93645 12.7972 8.08053 13.9356 8.08053 15.3414ZM18.2526 8.92296L20.2737 5.41703C20.3778 5.2365 20.3155 5.00637 20.1349 4.90124C19.9543 4.79611 19.7243 4.85848 19.6192 5.03901L17.568 8.59596C15.9392 7.84852 14.0759 7.42433 12.0837 7.42433C10.0914 7.42433 8.22816 7.84852 6.59938 8.59596L4.54817 5.03901C4.44304 4.85848 4.21291 4.79611 4.03239 4.90124C3.85186 5.00637 3.78949 5.2365 3.89462 5.41703L5.91461 8.92296C2.56947 10.7481 0.285714 14.0988 0 17.9866H24.1673C23.8827 14.0988 21.5978 10.7481 18.2526 8.92296Z" />
+                </svg>
+                Próximamente en Google Play
+            </a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="glass-panel feature-card">
+                    <div class="icon-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18V5l12-2v13" />
+                            <circle cx="6" cy="18" r="3" />
+                            <circle cx="18" cy="16" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Sonidos Premium</h3>
+                    <p>Calidad HD y biblioteca infinita de sonidos directamente desde la nube para una experiencia
+                        inmersiva.</p>
+                </div>
+                <div class="glass-panel feature-card">
+                    <div class="icon-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h3>Modo Focus</h3>
+                    <p>Temporizador integrado y funciones de bloqueo de distracciones para sesiones de trabajo profundo.
+                    </p>
+                </div>
+                <div class="glass-panel feature-card">
+                    <div class="icon-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 2.69l5.74 3.32a1 1 0 0 1 .5.86v6.63a1 1 0 0 1-.5.86L12 17.69l-5.74-3.32a1 1 0 0 1-.5-.86V6.87a1 1 0 0 1 .5-.86L12 2.69z" />
+                            <path d="M12 22a7 7 0 0 0 7-7v-3l-7-4-7 4v3a7 7 0 0 0 7 7z" />
+                        </svg>
+                    </div>
+                    <h3>100% Personalizable</h3>
+                    <p>Mezcla capas de sonidos, ajusta volúmenes y crea tu ambiente ideal. Tu paz, tus reglas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-links">
+                <button onclick="openModal('privacy-modal')">Política de Privacidad</button>
+                <button onclick="openModal('terms-modal')">Términos de Uso</button>
+                <a href="mailto:demotass.dev@gmail.com">Contacto</a>
+            </div>
+            <p class="copyright">&copy; 2024 Serensona. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Privacy Modal -->
+    <div id="privacy-modal" class="modal-overlay">
+        <div class="glass-panel modal-content">
+            <button class="close-modal" aria-label="Cerrar" onclick="closeModal('privacy-modal')">&times;</button>
+            <div class="modal-body">
+                <h2>Política de Privacidad</h2>
+
+                <h3>Recopilación de Datos y Publicidad</h3>
+                <p>En Serensona, valoramos su privacidad. Esta aplicación utiliza Google AdMob para mostrar anuncios.
+                    <strong>AdMob puede recopilar identificadores de dispositivo para personalizar la publicidad según
+                        las políticas de Google.</strong>
+                </p>
+
+                <p>Los datos recopilados por nuestros socios publicitarios se utilizan únicamente para mejorar la
+                    relevancia de los anuncios mostrados y asegurar el funcionamiento gratuito de esta aplicación.</p>
+
+                <h3>Contacto</h3>
+                <p>Si tiene alguna pregunta sobre nuestra política de privacidad, no dude en contactarnos en:</p>
+                <a href="mailto:demotass.dev@gmail.com" class="contact-email">demotass.dev@gmail.com</a>
+
+                <h3>Cambios en esta Política</h3>
+                <p>Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Se le
+                    notificará de cualquier cambio publicando la nueva política en esta página.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="terms-modal" class="modal-overlay">
+        <div class="glass-panel modal-content">
+            <button class="close-modal" aria-label="Cerrar" onclick="closeModal('terms-modal')">&times;</button>
+            <div class="modal-body">
+                <h2>Términos de Uso</h2>
+
+                <h3>Aceptación de los Términos</h3>
+                <p>Al descargar o utilizar la aplicación Serensona, usted acepta automáticamente estos términos.
+                    Asegúrese de leerlos atentamente antes de usar la aplicación.</p>
+
+                <h3>Uso de la Aplicación</h3>
+                <p>Serensona está diseñada para uso personal y no comercial. No está permitido copiar ni modificar la
+                    aplicación, ninguna parte de la misma, ni nuestras marcas comerciales de ninguna manera.</p>
+
+                <h3>Descargo de Responsabilidad</h3>
+                <p>Los sonidos y funciones de Serensona son para fines de relajación y entretenimiento. No sustituyen el
+                    consejo médico profesional.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
